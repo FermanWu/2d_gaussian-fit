@@ -10,11 +10,6 @@ int main(int argc, const char** argv)
     print_matrix(Q);
 
     double a[5][3] = { { 12, -51, 33 }, { 6, 167, 21 }, { -4, 24, 87 } ,{23, 14, 17},{21, 35, 41} };
-    printf("%p\n", a);
-    printf("%p\n", &a[0][0]);
-    printf("%p\n",&a[0]);
-    printf("%p\n", &a);
-    printf("%p\n",*(&a));
 
     matrix* A = create_matrix_from_array(5, 3, (TYPE*)a);
     printf("matrix A\n"); 
